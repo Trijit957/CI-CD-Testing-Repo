@@ -16,9 +16,10 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.14.0]
+        node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
+      
     steps:
     - name: Check Node Version
       run: |
