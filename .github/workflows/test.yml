@@ -23,3 +23,11 @@ jobs:
     - name: Check Node Version
       run: |
         node -v
+
+    - name: Install Ionic CLI
+      run: |
+        npm i -g @ionic/cli@latest
+
+    - name: Ionic Production Build
+      run: |
+        ionic build --prod
